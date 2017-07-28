@@ -19,9 +19,13 @@ public class FibonacciCalculator {
 		myScanner.close();
 		System.out.println("Fibonacci series upto " + number + " numbers : ");
 
-		// printing Fibonacci series up to number
+		System.out.println("Printing Fibonacci serie with iteration...");
 		for (int i = 1; i <= number; i++) {
-			System.out.print(fibonacciLoop(i) + " ");
+			System.out.print(FibonacciCalculator.fibonacciLoop(i) + " ");
+		}
+		System.out.println("Printing Fibonacci serie with recursion...");
+		for (int i = 1; i <= number; i++) {
+			System.out.print(FibonacciCalculator.fibonacciRecursive(i) + " ");
 		}
 	}
 
